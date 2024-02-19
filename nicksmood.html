@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Board Maker</title>
+    <style>
+        /* CSS Styles */
+        body {
+            background-color: maroon; /* Set background color to maroon */
+            color: white; /* Set text color to white */
+            font-family: Arial, sans-serif; /* Specify font family */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding for content */
+        }
+        .playlist-container {
+            display: grid; /* Use CSS grid for layout */
+            grid-template-columns: repeat(auto-fill, minmax(36rem, 1fr)); /* Automatically adjust column width */
+            grid-gap: 2rem; /* Add gap between grid items */
+        }
+        .playlist {
+            background-color: white;
+            border: 0.5rem solid white; /* Add border around playlists */
+            border-radius: 1rem; /* Add border radius */
+            overflow: hidden; /* Hide overflow content */
+        }
+        iframe {
+            width: 100%; /* Make iframes fill their parent container */
+            height: 36rem; /* Set fixed height for iframes */
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <!-- Explanation of HTML -->
+    <!-- HTML (Hypertext Markup Language) is the standard markup language for creating web pages
+         and web applications. It defines the structure and content of a webpage through various
+         elements and attributes. HTML documents consist of nested tags that describe the
+         structure of the content. These tags are interpreted by web browsers to render the
+         webpage accordingly. In this document, we use HTML to create a simple webpage for creating
+         mood boards by embedding Spotify playlists. -->
+    
+    <!-- Legend -->
+    <!-- Legend of HTML Tags Used:
+         - <!DOCTYPE html>: Defines the document type and version of HTML.
+         - <html>: Represents the root element of an HTML document.
+         - <head>: Contains meta-information about the document, such as title, metadata, and links to scripts and stylesheets.
+         - <meta>: Provides meta-information about the document, such as character set and viewport settings.
+         - <title>: Sets the title of the document, displayed in the browser's title bar or tab.
+         - <body>: Contains the content of the HTML document visible to the user.
+         - <header>: Represents introductory content, usually containing headings, logos, or navigation links.
+         - <h1>: Defines the most important heading in the section.
+         - <p>: Represents a paragraph of text.
+         - <div>: Defines a division or section in an HTML document, used for grouping and styling purposes.
+         - <iframe>: Embeds a nested browsing context, such as another HTML page or media file, into the current document. -->
+    
+    <!-- Introduction -->
+    <header>
+        <h1>Welcome to Mood Board Maker!</h1>
+        <p>This simple webpage allows you to create mood boards by embedding Spotify playlists.</p>
+    </header>
+
+    <!-- Playlist Container -->
+    <div class="playlist-container">
+        <!-- Placeholder for first playlist -->
+        <div class="playlist">
+             <!-- Embedding the first Spotify album -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3oRDvPfrxBRzMvvGtIsyJY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        
+        <!-- Placeholder for second playlist -->
+        <div class="playlist">
+            <!-- Embedding the second Spotify playlist -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2WQLWxMAhwODYoYVPauW1F?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- Placeholder for third playlist -->
+        <div class="playlist">
+            <!-- Embedding the third playlist -->
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/around-the-world/1609438391?i=1609438415"></iframe>
+        </div>
+
+        <div class="playlist">
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/safe-for-work/pl.9b626e076c8d4b99aca7ee84573c5e5a"></iframe>
+        </div>
+    </div>
+</body>
+</html>
