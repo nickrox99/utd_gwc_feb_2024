@@ -31,14 +31,33 @@
     
     <!-- Introduction -->
 
-    <div class="container">
+    <div class="container hero">
         <h1>Welcome to Mood Board Maker!</h1>
         <p>This simple webpage allows you to create mood boards by embedding Spotify playlists.</p>
-        <!-- Placeholder for first playlist -->
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3IoEPcjMehtLNVn9Si7Zv4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        
-        <!-- Placeholder for second playlist -->
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5w7SnYWs3WYNkUiaCjk4IK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <!-- Mood board grid  + bootstrap css guide -->
+    <!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+
+    <div class="container board">
+        <div class="row">
+            <div class="col">
+                <!-- Placeholder for first playlist -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3IoEPcjMehtLNVn9Si7Zv4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col">
+                <!-- Placeholder for second playlist -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5w7SnYWs3WYNkUiaCjk4IK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+                <!-- Placeholder for third playlist -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3WkgLAd7jGX3sZikfkF0lU?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>            </div>
+            <div class="col">
+                <!-- Placeholder for fourth playlist -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Z1fN0KFNu0aG2EpbBVwvN?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>            </div>
+         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
